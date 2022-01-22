@@ -1,0 +1,48 @@
+footer{
+    margin-top: 5em;
+    padding-top: 20px;
+    position: relative;
+}
+
+#copyrightSpan{
+    font-size: 15px;
+    opacity: .8;
+    color: var(--darkPink);
+    text-shadow: 5px 5px 5px var(--darkPinkShadow);
+    @media (max-width: 768px) {
+        font-size: 8px;
+    }
+}
+
+#logoFDiv{
+    position: relative;
+}
+
+#logo-en-footer{
+    position: absolute;
+    font-family: "CountrySide";
+    font-size: 60px;
+    color: var(--darkPink);
+    z-index: 10;
+    text-shadow: 5px 5px 5px var(--darkPinkShadow);
+    transition: .3s;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+  
+#logo-zh-footer{
+    position: absolute;
+    font-family: "FZ Xiaozhuan";
+    font-size: 100px;
+    opacity: .5;
+    color: var(--darkPinkShadow);
+    transition: .3s;
+    @media (max-width: 768px) {
+        font-size: 80px;
+    }
+}
+
+#logoFooterDiv{
+    height: 0;
+}

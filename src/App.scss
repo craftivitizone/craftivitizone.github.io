@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'CountrySide';
+  src: local('countryside'), url(./fonts/countryside.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'FZ Xiaozhuan';
+    src: local('fz_xiaozhuan'), url(./fonts/fz_xiaozhuan.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ZoomLaChuHei';
+  src: local('zoomlachuhei'), url(./fonts/zoomlacuhei.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: local('montserrat_medium'), url(./fonts/montserrat_medium.ttf) format('truetype');
+}
+
+@mixin center-component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root{
+  --darkPink: rgba(205,145,145,1);
+  --lightPink: rgba(253,246,246,1);
+  --lightPinkShadow: rgba(253,246,246,.3);
+  --darkPinkShadow: rgba(205,145,145,.3);
+  --midPink: rgba(234,202,202,1);
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  background: var(--lightPink);
+  user-select: none;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+  
+::-webkit-scrollbar-track {
+  border: none;
+  background: var(--lightPink);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--midPink);
+
+  &:hover {
+      background: var(--darkPink);
+  }
+}
+
+button, a{
+  outline: none;
+}
+
+

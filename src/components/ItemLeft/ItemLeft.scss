@@ -1,0 +1,45 @@
+.title{
+    font-family: 'ZoomLaChuHei';
+    color: var(--darkPink);
+    font-size: 30px;
+    text-align: left;
+
+    @media (max-width: 768px) {
+        font-size: 25px;
+    }
+}
+
+.itemLeft{
+    transition: .3s;
+
+    &.itemLeft:hover .imgDiv>.itemImg{
+        opacity: 1;
+        transform: scale(2);
+    }
+
+    &>.infoDiv{
+        background: var(--lightPink);
+        z-index: 20;
+        padding: 20px;
+    }
+
+    &>.infoDiv>a{
+        opacity: 0;
+        text-shadow: 0px 0px 0px var(--darkPinkShadow);
+        transition: .3s;
+    }
+
+    &.itemLeft:hover .infoDiv>a{
+        opacity: 1;
+        text-shadow: 5px 5px 5px var(--darkPinkShadow);
+    }
+}
+
+.itemImg{
+    opacity: .8;
+    transition: .3s;
+
+    &:hover, &.itemLeft:hover{
+        opacity: 1;
+    }
+}

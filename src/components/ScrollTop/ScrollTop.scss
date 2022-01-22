@@ -1,0 +1,23 @@
+#scrollTop{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    fill: var(--darkPink);
+    width: 5%;
+    cursor: pointer;
+    transition: .3s;
+    background: var(--midPink);
+    box-shadow: 5px 5px 5px var(--darkPinkShadow);
+    border-radius: 50px;
+    padding: 15px 17px;
+    z-index: 50;
+    display: none;
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    &:hover{
+        fill: var(--lightPink);
+        opacity: 1;
+    }    
+}
