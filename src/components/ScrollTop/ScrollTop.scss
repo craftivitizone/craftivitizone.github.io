@@ -12,9 +12,6 @@
     padding: 15px 17px;
     z-index: 50;
     display: none;
-    @media (max-width: 768px) {
-        display: none;
-    }
 
     &:hover{
         fill: var(--lightPink);

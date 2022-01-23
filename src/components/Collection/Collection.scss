@@ -1,0 +1,90 @@
+.collection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 15em;
+    padding: 20px;
+
+    &>.item{
+        box-shadow: 5px 5px 5px var(--darkPinkShadow);
+        position: absolute;
+        width: 30%;
+        transition: .3s;
+        background: none;
+        border-radius: 20px;
+        transform: scale(1.0);
+
+        &>img{
+            border-radius: 20px;
+            transition: .3s;
+        }
+
+        &:hover >img, &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &>#item1{
+        position: relative;
+        margin-left: -5%;
+        z-index: 10;
+        animation-delay: .2s;
+        animation: moveUp 5s ease-in-out infinite;
+    }
+    &>#item2{
+        left: 20%;
+        top: 35%;
+        z-index: 20;
+        animation: moveDown 5s ease-in-out infinite;
+    }
+    &>#item3{
+        left: 40%;
+        top: -15%;
+        z-index: 0;
+        animation: moveUp 5s ease-in-out infinite;
+    }
+    &>#item4{
+        right: 7%;
+        top: 2%;
+        z-index: 10;
+        animation: moveDown 5s ease-in-out infinite;
+    }
+    &>#item5{
+        right: -15%;
+        top: 13%;
+        z-index: 10;
+        animation: moveUp 5s ease-in-out infinite;
+    }
+    &>#item6{
+        right: 18%;
+        top: 50%;
+        z-index: 10;
+        animation: moveDown 5s ease-in-out infinite;
+    }
+    &>#item7{
+        left: 5%;
+        top: -10%;
+        z-index: 0;
+        animation: moveDown 5s ease-in-out infinite;
+    }
+}
+
+@keyframes moveDown {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+}
+
+
+@keyframes moveUp {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(50px);
+      }
+}

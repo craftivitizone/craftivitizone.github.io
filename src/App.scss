@@ -18,6 +18,8 @@
   src: local('montserrat_medium'), url(./fonts/montserrat_medium.ttf) format('truetype');
 }
 
+@import 'aos/dist/aos.css';
+
 @mixin center-component{
   display: flex;
   justify-content: center;

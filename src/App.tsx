@@ -6,9 +6,9 @@ import ItemLeft from './components/ItemLeft/ItemLeft';
 import ItemRight from './components/ItemRight/ItemRight';
 import items from './data/items.json';
 import AOS from 'aos';
-import "aos/dist/aos.css";
 import EmptyDiv from './components/EmptyDiv/EmptyDiv';
 import ScrollTop from './components/ScrollTop/ScrollTop';
+import Collection from './components/Collection/Collection';
 
 const STATE_LEFT = 'left';
 const STATE_RIGHT = 'right';
@@ -26,7 +26,7 @@ function App() {
   for (let i=0; i < items.length; i++){
     if (state == STATE_LEFT){
       itemArr.push(
-        <div data-aos={"slide-right"} className="grid grid-cols-1" key={`left${i}`}>
+        <div data-aos={"slide-left"} className="grid grid-cols-1" key={`left${i}`}>
           <ItemLeft key={`leftChild${i}`} name={items[i].name} url={items[i].url} imgArr={items[i].img}/>
         </div>
       );
@@ -35,7 +35,7 @@ function App() {
     }
     else{
       itemArr.push(
-        <div data-aos={"slide-left"} className="grid grid-cols-1" key={`right${i}`}>
+        <div data-aos={"slide-right"} className="grid grid-cols-1" key={`right${i}`}>
           <ItemRight key={`rightChild${i}`} name={items[i].name} url={items[i].url} imgArr={items[i].img}/>
         </div>
       );
@@ -47,6 +47,7 @@ function App() {
     <div className="App">
       <ScrollTop/>
       <Header/>
+      <Collection/>
       <div className='flex flex-col'>
         <EmptyDiv/>
         { itemArr }

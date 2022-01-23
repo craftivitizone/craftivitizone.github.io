@@ -1,11 +1,11 @@
 .title{
     font-family: 'ZoomLaChuHei';
     color: var(--darkPink);
-    font-size: 30px;
+    font-size: 100px;
     text-align: left;
 
     @media (max-width: 768px) {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -18,7 +18,6 @@
     }
 
     &>.infoDiv{
-        background: var(--lightPink);
         z-index: 20;
         padding: 20px;
     }

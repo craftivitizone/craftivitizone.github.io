@@ -11,7 +11,7 @@
 .logoDiv{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,32 +43,5 @@
       @media (max-width: 768px) {
         font-size: 100px;
       }
-    }
-}
-
-.socialDiv{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 35%;
-    margin-right: 35%;
-    transition: .3s;
-
-    &>.socialIcon{
-        fill: var(--midPink);
-        width: 15%;
-        opacity: .8;
-        transition: .3s;
-        margin: 1em;
-        cursor: pointer;
-        @media (max-width: 768px) {
-            width: 30%;
-        }
-
-        &:hover{
-            fill: var(--darkPink);
-            opacity: 1;
-        }
     }
 }
