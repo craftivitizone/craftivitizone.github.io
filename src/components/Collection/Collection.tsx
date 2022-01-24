@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './Collection.scss';
 import tiger from '../../images/tiger.gif';
 import wdfq from '../../images/wangdaofeiqi.png';
@@ -10,7 +10,7 @@ import koif from '../../images/koi_frame.jpg';
 
 function Collection(props: any) {
   return (
-    <div className="collection" data-aos={"zoom-in-up"}>
+    <div className="collection" data-aos={"slide-up"}>
       <div className="item" id='item1'><img src={koif}/></div>
       <div className="item" id='item2'><img src={tiger}/></div>
       <div className="item" id='item3'><img src={nnyy}/></div>

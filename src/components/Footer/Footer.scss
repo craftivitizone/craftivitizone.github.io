@@ -5,7 +5,15 @@ footer{
     padding-bottom: 10px;
 
     &>.leftFDiv{  
-        width:fit-content;
+        @media (min-width: 768px) {
+            width:fit-content;
+        }
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &>.fuDiv{
             font-family: "FZ Xiaozhuan";
             color: var(--lightPink);
@@ -82,25 +90,37 @@ footer{
             display:none;
         }   
         @media (min-width: 300px) {
-            bottom:-7%;
+            bottom:-6%;
+        }      
+        @media (min-width: 350px) {
+            bottom:-8%;
         }      
         @media (min-width: 400px) {
-            bottom:-10%;
+            bottom:-9%;
         }      
         @media (min-width: 450px) {
-            bottom:-13%;
+            bottom:-10%;
         }          
         @media (min-width: 500px) {
-            bottom:-14%;
+            bottom:-11%;
         }
         @media (min-width: 550px) {
-            bottom:-16%;
+            bottom:-12%;
         }
         @media (min-width: 600px) {
-            bottom:-17%;
+            bottom:-12%;
+        }
+        @media (min-width: 650px) {
+            bottom:-13%;
         }
         @media (min-width: 700px) {
-            bottom:-20%;
+            bottom:-14%;
+        }
+        @media (min-width: 750px) {
+            bottom:-15%;
+        }
+        @media (min-width: 768px) {
+            bottom:-22%;
         }
         @media (min-width: 800px) {
             bottom:-22%;
