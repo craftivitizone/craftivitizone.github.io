@@ -1,16 +1,6 @@
-.title{
-    font-family: 'ZoomLaChuHei';
-    color: var(--darkPink);
-    font-size: 100px;
-    text-align: left;
-
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
-}
-
 .itemRight{
     transition: .3s;
+    width: 100vw;
 
     &.itemRight:hover .imgDiv>.itemImg{
         opacity: 1;
@@ -26,6 +16,9 @@
         opacity: 0;
         text-shadow: 0px 0px 0px var(--darkPinkShadow);
         transition: .3s;
+        @media (max-width: 768px) {
+            opacity: 1;
+        }
     }
 
     &.itemRight:hover .infoDiv>a{
@@ -37,6 +30,7 @@
 .itemImg{
     opacity: .8;
     transition: .3s;
+    width: 30vw;
 
     &:hover, &.itemRight:hover{
         opacity: 1;

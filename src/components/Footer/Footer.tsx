@@ -6,8 +6,8 @@ import './Footer.scss';
 
 function Footer() {
   return (
-    <div className='grid grid-rows-2 gap-0'>
-      <div data-aos={"slide-left"} id="czFooter"><span className='absolute'>CRAFTIVITI ZONE</span></div>
+    // <div className='grid grid-rows-2 gap-0'>
+      /* <div data-aos={"slide-left"} id="czFooter"><span className='absolute'>CRAFTIVITI ZONE</span></div> */
       <div className='footerDiv'>
         <footer className='grid grid-cols-2'>
             <div className="leftFDiv grid grid-cols-2 gap-0">
@@ -26,7 +26,7 @@ function Footer() {
             </div>
         </footer>
       </div>
-    </div>
+    // </div>
   );
 }
 

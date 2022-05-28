@@ -1,18 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component, useRef, useState } from 'react';
+import CropperLib from '../Cropper/CropperLib';
 import './Slideshow.scss';
 
 const delay = 5000;
 
 function Slideshow(props: any) {
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef: { current: NodeJS.Timeout | null } = React.useRef(null);
+  const [index, setIndex] = useState(0);
+  const timeoutRef: { current: NodeJS.Timeout | null } = useRef(null);
   const imgArr = props.img;
+  const imgAlt = props.imgAlt;
   const direction = props.direction; //Left or Right
+  const requireCrop = props.requireCrop;
+  const [img, setImg] = useState('');
 
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
+  }
+  function updateImg(img: any){
+    setImg(img);
   }
 
   React.useEffect(() => {
@@ -39,15 +46,18 @@ function Slideshow(props: any) {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {imgArr.map((url: any, index: any) => (
-          <img
-            className="slide object-fill"
-            key={index}
-            src={url}
-          />
+          <div className="slide" key={index}>
+            {
+              requireCrop ? 
+              <CropperLib url={url} updateImg={updateImg}/>:
+              <img src={url} alt={`${imgAlt}${index}`}/>
+            }
+          </div>
         ))}
       </div>
-
-      <div className="slideshowDots">
+      {
+        imgArr.length > 1 ?
+        <div className="slideshowDots">
         {imgArr.map((_: any, idx: any) => (
           <div
             key={idx}
@@ -57,7 +67,9 @@ function Slideshow(props: any) {
             }}
           ></div>
         ))}
-      </div>
+      </div> :
+      ""
+      }
     </div>
   );
 }

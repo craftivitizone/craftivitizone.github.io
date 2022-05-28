@@ -1,5 +1,5 @@
 .collection{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -15,18 +15,18 @@
     &>.item{
         box-shadow: 5px 5px 5px var(--darkPinkShadow);
         position: absolute;
-        width: 30%;
+        width: 30vw;
         transition: .3s;
         background: none;
-        border-radius: 20px;
+        border-radius: 5px;
         transform: scale(1.0);
 
-        &>img{
-            border-radius: 20px;
+        &>img, &>.vid{
+            border-radius: 5px;
             transition: .3s;
         }
 
-        &:hover >img, &:hover{
+        &:hover >img, &:hover, &:hover >.vid{
             transform: scale(1.05);
         }
     }
@@ -97,7 +97,7 @@
 
 .imgCollection{
     width: fit-content;
-    border-radius: 40px;
+    border-radius: 5px;
     box-shadow: 5px 5px 5px var(--darkPinkShadow);
     transition: .3s;
 }

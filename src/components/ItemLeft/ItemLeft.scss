@@ -7,10 +7,14 @@
     @media (max-width: 768px) {
         font-size: 30px;
     }
+    @media (max-width: 300px) {
+        font-size: 20px;
+    }
 }
 
 .itemLeft{
     transition: .3s;
+    width: 100vw;
 
     &.itemLeft:hover .imgDiv>.itemImg{
         opacity: 1;
@@ -26,6 +30,9 @@
         opacity: 0;
         text-shadow: 0px 0px 0px var(--darkPinkShadow);
         transition: .3s;
+        @media (max-width: 768px) {
+            opacity: 1;
+        }
     }
 
     &.itemLeft:hover .infoDiv>a{
@@ -37,6 +44,7 @@
 .itemImg{
     opacity: .8;
     transition: .3s;
+    width: 30vw;
 
     &:hover, &.itemLeft:hover{
         opacity: 1;

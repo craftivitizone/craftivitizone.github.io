@@ -1,8 +1,9 @@
 footer{
-    background: var(--darkPink);        
+    background: var(--darkerPink);        
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100vw;
 
     &>.leftFDiv{  
         @media (min-width: 768px) {
@@ -52,6 +53,7 @@ footer{
     }
 
     &>.textFDiv{
+        margin-right: 1em;
         &>.footerSpan{
             font-size: 15px;
             color: var(--lightPink);
@@ -76,64 +78,64 @@ footer{
     z-index: 50;
 }
 
-#czFooter{
-    font-family: "Montserrat Medium";
-    font-size: 11vw;
-    color: var(--darkPink);
-    text-shadow: 5px 5px 5px var(--darkPinkShadow);
-    position: relative;
-    display: flex;
-    z-index: 0;
+// #czFooter{
+//     font-family: "Montserrat Medium";
+//     font-size: 11vw;
+//     color: var(--darkPink);
+//     text-shadow: 5px 5px 5px var(--darkPinkShadow);
+//     position: relative;
+//     display: flex;
+//     z-index: 0;
 
-    &>span{
-        @media (max-width: 299px) {
-            display:none;
-        }   
-        @media (min-width: 300px) {
-            bottom:-6%;
-        }      
-        @media (min-width: 350px) {
-            bottom:-8%;
-        }      
-        @media (min-width: 400px) {
-            bottom:-9%;
-        }      
-        @media (min-width: 450px) {
-            bottom:-10%;
-        }          
-        @media (min-width: 500px) {
-            bottom:-11%;
-        }
-        @media (min-width: 550px) {
-            bottom:-12%;
-        }
-        @media (min-width: 600px) {
-            bottom:-12%;
-        }
-        @media (min-width: 650px) {
-            bottom:-13%;
-        }
-        @media (min-width: 700px) {
-            bottom:-14%;
-        }
-        @media (min-width: 750px) {
-            bottom:-15%;
-        }
-        @media (min-width: 768px) {
-            bottom:-22%;
-        }
-        @media (min-width: 800px) {
-            bottom:-22%;
-        }
-        @media (min-width: 900px) {
-            bottom:-26%;
-        }
-        @media (min-width: 1000px) {
-            bottom:-30%;
-        }
-        @media (min-width: 1366px) {
-            bottom:-40%;
-        }
-    }
-}
+//     &>span{
+//         @media (max-width: 299px) {
+//             display:none;
+//         }   
+//         @media (min-width: 300px) {
+//             bottom:-6%;
+//         }      
+//         @media (min-width: 350px) {
+//             bottom:-8%;
+//         }      
+//         @media (min-width: 400px) {
+//             bottom:-9%;
+//         }      
+//         @media (min-width: 450px) {
+//             bottom:-10%;
+//         }          
+//         @media (min-width: 500px) {
+//             bottom:-11%;
+//         }
+//         @media (min-width: 550px) {
+//             bottom:-12%;
+//         }
+//         @media (min-width: 600px) {
+//             bottom:-12%;
+//         }
+//         @media (min-width: 650px) {
+//             bottom:-13%;
+//         }
+//         @media (min-width: 700px) {
+//             bottom:-14%;
+//         }
+//         @media (min-width: 750px) {
+//             bottom:-15%;
+//         }
+//         @media (min-width: 768px) {
+//             bottom:-22%;
+//         }
+//         @media (min-width: 800px) {
+//             bottom:-22%;
+//         }
+//         @media (min-width: 900px) {
+//             bottom:-26%;
+//         }
+//         @media (min-width: 1000px) {
+//             bottom:-30%;
+//         }
+//         @media (min-width: 1366px) {
+//             bottom:-40%;
+//         }
+//     }
+// }
 

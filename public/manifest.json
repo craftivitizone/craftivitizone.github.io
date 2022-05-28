@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Craftiviti Zone",
+  "name": "Craftiviti Zone",
   "icons": [
     {
       "src": "favicon.ico",
@@ -15,11 +15,13 @@
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#CD9191",
+  "background_color": "#ffffff",
+  "prefer_related_applications": "false"
 }

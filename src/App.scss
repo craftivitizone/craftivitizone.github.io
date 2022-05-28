@@ -27,6 +27,7 @@
 }
 
 :root{
+  --darkerPink: rgb(153, 93, 93);
   --darkPink: rgba(205,145,145,1);
   --lightPink: rgba(253,246,246,1);
   --lightPinkShadow: rgba(253,246,246,.3);
@@ -46,6 +47,8 @@ img {
   background: var(--lightPink);
   user-select: none;
   position: relative;
+  overflow-y: none;
+  width: 100vw;
 }
 
 ::-webkit-scrollbar {

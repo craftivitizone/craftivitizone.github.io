@@ -1,0 +1,7 @@
+.cropper{
+    width: fit-content; 
+    &>img{
+        opacity: 1 !important;
+        vertical-align: bottom; 
+    }
+}

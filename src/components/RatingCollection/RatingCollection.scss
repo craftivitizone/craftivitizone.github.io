@@ -1,0 +1,47 @@
+.ratingMain{
+    display: flex;
+    flex-direction: column;
+    background: var(--darkPink);
+    height: fit-content;
+    padding: 10px;
+    @media (max-width: 768px) {
+        height: 100%;
+    }
+
+    &>.ratingTitle{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+        cursor: pointer;
+
+        &>#ratingTitleZh{
+            font-family: 'ZoomLaChuHei';
+            color: var(--lightPink);
+            font-size: 40px;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                font-size: 30px;
+            }
+        }
+        &>#ratingTitleEn{
+            font-family: Montserrat;
+            color: var(--lightPink);
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 10px;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    &>.ratingCollection{
+        display: flex;
+        justify-content: center;
+        transition: .3s;
+        @media (max-width: 768px) {
+            display: inline-block;
+        }
+    }
+}

@@ -13,7 +13,6 @@ function ScrollTop() {
         if (!window.matchMedia('(max-width: 768px)').matches){
             if (scrolled > 50){
                 $("#scrollTop").fadeIn();
-                console.log(scrolled)
                 setVisible(true)
             }
             else{
@@ -26,7 +25,7 @@ function ScrollTop() {
     
     window.addEventListener('scroll', toggleVisible);
     return (
-        <button style={{visibility: visible ? 'visible' : 'hidden'}} data-aos={"zoom-in-left"} id="scrollTop" onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth' })}><ScrollTopIcon /></button>
+        <button style={{visibility: visible ? 'visible' : 'hidden'}} data-aos={"zoom-in-left"} id="scrollTop" onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth' })}><ScrollTopIcon className='scrollTopIcon'/></button>
     );
 }
 
